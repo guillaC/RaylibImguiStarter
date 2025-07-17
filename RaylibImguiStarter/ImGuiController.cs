@@ -22,16 +22,6 @@ namespace RaylibImguiStarter
             LoadDefaultFontAtlas();
         }
 
-        static string GetClipboardText()
-        {
-            return Raylib.GetClipboardText_();
-        }
-
-        static void SetClipboardText(string text)
-        {
-            Raylib.SetClipboardText(text);
-        }
-
         public static void Shutdown()
         {
             if (g_UnloadAtlas) ImGui.GetIO().Fonts.ClearFonts();
